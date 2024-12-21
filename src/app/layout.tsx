@@ -1,5 +1,5 @@
-import ConvexClientProvider from "@/components/providers/ConvexClientProvider";
-import { ClerkProvider } from "@clerk/nextjs";
+import Footer from "@/components/footer/Footer";
+import Header from "@/components/header/Header";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -25,14 +25,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
-      <html lang="en">
-        <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-gradient-to-b from-gray-900 to-gray-950 text-gray-100 flex flex-col`}
-        >
-          <ConvexClientProvider>{children}</ConvexClientProvider>
-        </body>
-      </html>
-    </ClerkProvider>
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0F0D0E] text-[#F9F4DA]`}
+      >
+        <Header />
+        {children}
+        <Footer/>
+      </body>
+    </html>
   );
 }
