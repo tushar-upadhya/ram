@@ -4,7 +4,7 @@ import { infoData, KrishnaNames, skillData } from "@/lib/about";
 
 const AboutPage = () => {
   return (
-    <div className="min-h-screen bg-[#0F0D0E] text-[#F9F4DA] flex flex-col items-center justify-center py-8">
+    <div className="min-h-screen bg-[#0F0D0E] text-[#F9F4DA] flex flex-col items-center justify-center">
       <Hero
         title="Who we are?"
         description="Octanics software provides intelligent software solutions and technology to help entrepreneurs and business owners start and expand their ventures."
@@ -51,7 +51,7 @@ const AboutPage = () => {
                       className="flex items-center justify-center xl:justify-start gap-x-4 xl:gap-x-6 xl:mx-0"
                       key={index}
                     >
-                      <div className="text-primary">{item.icon}</div>
+                      {/* <div className="text-primary">{item.icon}</div> */}
                       <div>{item.text}</div>
                     </div>
                   ))}
@@ -69,16 +69,16 @@ const AboutPage = () => {
                     {skillData
                       .find((category) => category.title === "skills")
                       ?.data.map((item, index) => {
-                        const { name, des } = item;
+                        // const { name, des } = item;
                         return (
                           <div
                             className="mx-auto text-center w-3/4 xl:text-left xl:mx-0 xl:w-2/5 mb-6"
                             key={index}
                           >
-                            <div className="font-medium text-primary">
-                              {name}:
-                            </div>
-                            <div className="font-medium">{des}</div>
+                            {/* <div className="font-medium text-primary">
+                              {item.name}:
+                            </div> */}
+                            {/* <div className="font-medium">{item.des}</div> */}
                           </div>
                         );
                       })}
