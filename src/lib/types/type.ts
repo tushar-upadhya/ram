@@ -6,7 +6,7 @@ export interface Product {
 }
 
 export interface InfoItem {
-  // icon: React.ReactNode;
+  icon: string;
   text: string;
 }
 

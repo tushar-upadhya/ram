@@ -1,4 +1,5 @@
 import { products } from "@/lib/navigate-link";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -17,15 +18,16 @@ const ProductDropdown: React.FC<{ isMobile?: boolean }> = ({ isMobile }) => {
         <Link
           href={product.link}
           key={index}
-          className="group flex items-start space-x-4 hover:bg-[#1a1819] p-3 rounded-lg transition duration-200"
+          className="group flex items-start space-x-4 hover:bg-[#1a1819]  p-3 rounded-lg transition duration-200"
           aria-label={`Navigate to ${product.title}`}
         >
-          <span
-            className="text-xl group-hover:scale-110 transition-transform duration-200"
-            aria-hidden="true"
-          >
-            {product.icon}
-          </span>
+          <Image
+            src={product.icon}
+            alt={`${product.title} icon`}
+            width={24}
+            height={24}
+            className="w-6 h-6 text-xl  transition-transform  bg-transparent duration-200"
+          />
           <div className="group">
             <h2 className="text-[#F9F4DA] font-semibold text-base md:text-lg group-hover:text-[#FC7428] transition-colors">
               {product.title}
