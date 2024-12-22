@@ -1,88 +1,82 @@
-import { InfoItem, KrishnaName, SkillCategory } from "./types/type";
-
-export const infoData: InfoItem[] = [
+export const infoData = [
   {
-    // icon: <User2 />,
+    icon: "User",
     text: "Krishna (Kanha)",
   },
   {
-    // icon: <MailIcon />,
+    icon: "Mail",
     text: "radheradheBolo@email.com",
   },
   {
-    // icon: <GraduationCap />,
+    icon: "GraduationCap",
     text: "Wisdom, Devotion and Spiritual Knowledge",
   },
   {
-    // icon: <HomeIcon />,
+    icon: "Home",
     text: "Mathura, Uttar Pradesh",
   },
 ];
 
-export const skillData: SkillCategory[] = [
+export const skillData = [
   {
-    title: "skills",
+    title: "Skills",
     data: [
       {
         name: "Joyful and Happy",
-        des: "Krishna is known for his joyful, happy, and playful character",
+        description:
+          "Krishna is known for his joyful, happy, and playful character",
       },
       {
         name: "Great Leader",
-        des: "Krishna is a master strategist and diplomatic leader who adopts different leadership styles according to the situation",
+        description:
+          "Krishna is a master strategist and diplomatic leader who adopts different leadership styles according to the situation",
       },
       {
         name: "Mischievous",
-        des: "Krishna was very naughty as a child and is believed to hide his clothes of Gopis mischievously",
+        description:
+          "Krishna was very naughty as a child and is believed to hide his clothes of Gopis mischievously",
       },
       {
         name: "Ideal Friend",
-        des: "Krishna personified the ideal friend. It is largely due to his utter humility towards his friend Sudama",
+        description:
+          "Krishna personified the ideal friend. It is largely due to his utter humility towards his friend Sudama",
       },
     ],
   },
   {
-    title: "tools",
+    title: "Tools",
     data: [
-      {
-        imgPath: "/about/vscode.svg",
-      },
-      {
-        imgPath: "/about/figma.svg",
-      },
-      {
-        imgPath: "/about/notion.svg",
-      },
-      {
-        imgPath: "/about/wordpress.svg",
-      },
+      { name: "VS Code", imgPath: "/about/vscode.svg" },
+      { name: "Figma", imgPath: "/about/figma.svg" },
+      { name: "Notion", imgPath: "/about/notion.svg" },
+      { name: "WordPress", imgPath: "/about/wordpress.svg" },
     ],
   },
 ];
 
-export const KrishnaNames: KrishnaName[] = [
+export const KrishnaNames = [
   {
     name: "Krishna",
-    des: "The dark or all-attractive one",
+    description: "The dark or all-attractive one",
   },
   {
     name: "Gopal",
-    des: "The protector of cows or the cowherd",
+    description: "The protector of cows or the cowherd",
   },
   {
     name: "Murlimanohar",
-    des: "The one who looks beautiful with a flute",
+    description: "The one who looks beautiful with a flute",
   },
   {
     name: "Ranchod",
-    des: "The one who runs away from the battlefield",
+    description: "The one who runs away from the battlefield",
   },
   {
     name: "Dwarkadheesh",
-    des: "The lord of Dwarka, the city where Krishna ruled",
+    description: "The lord of Dwarka, the city where Krishna ruled",
   },
   {
     name: "Madhava",
-    des: "The sweet or honey-like one",
+    description: "The sweet or honey-like one",
   },
 ];

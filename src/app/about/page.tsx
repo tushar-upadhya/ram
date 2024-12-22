@@ -95,7 +95,7 @@ const AboutPage = () => {
                   <div className="mb-4 border-b border-border"></div>
                   <div>
                     {KrishnaNames.map((item, index) => {
-                      const { name, des } = item;
+                      const { name, description } = item;
                       return (
                         <div
                           className="mx-auto text-center w-3/4 xl:text-left xl:mx-0 xl:w-2/5 mb-6"
@@ -104,7 +104,7 @@ const AboutPage = () => {
                           <div className="font-medium text-primary">
                             {name}:
                           </div>
-                          <div className="font-medium">{des}</div>
+                          <div className="font-medium">{description}</div>
                         </div>
                       );
                     })}
